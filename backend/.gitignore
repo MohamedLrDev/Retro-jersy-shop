@@ -1,0 +1,6 @@
+ECHO is on.
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
+.env
