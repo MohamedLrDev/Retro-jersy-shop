@@ -1,14 +1,19 @@
+import "./App.css";
+import Categories from "./assets/components/Teams";
 
-import './App.css'
-import Navbar from './assets/components/Navbar'
+import Main from "./assets/components/Main";
+import MainLayout from "./assets/components/MainLayout";
+import Navbar from "./assets/components/Navbar";
 
 function App() {
-
-  return (
-    <>
-      <Navbar />
-    </>
-  )
+    return (
+        <>
+            <Navbar />
+            <Main />
+            <Categories />
+            <MainLayout />
+        </>
+    );
 }
 
-export default App
+export default App;
