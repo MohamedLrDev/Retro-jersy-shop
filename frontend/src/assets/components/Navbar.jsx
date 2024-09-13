@@ -4,14 +4,14 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 const Navbar = () => {
     return (
-        <nav className="fixed top-0 left-0 w-full flex items-center justify-between py-4 px-[25vh] bg-[#2F4F4F] z-50">
+        <nav className="fixed top-0 left-0 w-full h-[70px] flex text-[17px] items-center justify-between py-4 px-[25vh] bg-[#2A2A42] z-50">
             <div className="text-[#F5F5F5]">
                 <a href="#">Logo</a>
             </div>
-            <ul className="flex space-x-8 text-[#FF6347] text-[16px]">
+            <ul className="flex space-x-8 text-[#FF6347] ">
                 <li>
                     <div className="group relative">
-                        <a href="#" className="relative transition-colors ">
+                        <a href="#" className="relative transition-colors py-1 ">
                             Accueil
                             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-all duration-300 ease-in-out transform scale-x-0 group-hover:scale-x-100 group-hover:bg-[#FF6347] origin-left"></span>
                         </a>
@@ -19,7 +19,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <div className="group relative">
-                        <a href="#" className="relative transition-colors ">
+                        <a href="#" className="relative transition-colors py-1">
                             À propos
                             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-all duration-300 ease-in-out transform scale-x-0 group-hover:scale-x-100 group-hover:bg-[#FF6347] origin-left"></span>
                         </a>
@@ -27,7 +27,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <div className="group relative">
-                        <a href="#" className="relative transition-colors ">
+                        <a href="#" className="relative transition-colors py-1">
                             Produits
                             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-all duration-300 ease-in-out transform scale-x-0 group-hover:scale-x-100 group-hover:bg-[#FF6347] origin-left"></span>
                         </a>
@@ -35,7 +35,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <div className="group relative">
-                        <a href="#" className="relative transition-colors ">
+                        <a href="#" className="relative transition-colors py-1">
                             Contact
                             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-all duration-300 ease-in-out transform scale-x-0 group-hover:scale-x-100 group-hover:bg-[#FF6347] origin-left"></span>
                         </a>

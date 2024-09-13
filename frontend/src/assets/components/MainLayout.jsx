@@ -6,12 +6,12 @@ import HandshakeOutlinedIcon from '@mui/icons-material/HandshakeOutlined';
 
 const MainLayout = () => {
   return (
-    <div className="flex flex-col items-center py-16 px-8">
+    <div className="flex flex-col items-center text-[#2A2A42] py-16 px-8">
       {/* Title Section */}
-      <h1 className="text-3xl mb-2 text-center">
+      <h1 className="text-4xl mb-2 text-center ">
         Get<span className="font-semibold text-[#FF6347]"> YOUR </span>jersey
       </h1>
-      <p className="text-gray-500 mb-8 text-center">
+      <p className="text-gray-500 mb-8 text-lg text-center">
         No complicated user settings. No app. No Bluetooth. Simply press and restore.
       </p>
 
