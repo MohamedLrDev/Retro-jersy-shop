@@ -36,6 +36,7 @@ const MainPage = () => {
                     alt="Jeresy 3d"
                     className="w-[600px] max-w-lg"
                 />
+                
             </div>
         </div>
     );
