@@ -1,55 +1,46 @@
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import SearchIcon from "@mui/icons-material/Search";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import { useState } from 'react'
+import { Menu, X, ShoppingCart, Search, User } from 'lucide-react'
 
-const Navbar = () => {
-    return (
-        <nav className="fixed top-0 left-0 w-full h-[70px] flex text-[17px] items-center justify-between py-4 px-[25vh] bg-[#2A2A42] z-50">
-            <div className="text-[#F5F5F5]">
-                <a href="#">Logo</a>
-            </div>
-            <ul className="flex space-x-8 text-[#FF6347] ">
-                <li>
-                    <div className="group relative">
-                        <a href="#" className="relative transition-colors py-1 ">
-                            Accueil
-                            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-all duration-300 ease-in-out transform scale-x-0 group-hover:scale-x-100 group-hover:bg-[#FF6347] origin-left"></span>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div className="group relative">
-                        <a href="#" className="relative transition-colors py-1">
-                            À propos
-                            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-all duration-300 ease-in-out transform scale-x-0 group-hover:scale-x-100 group-hover:bg-[#FF6347] origin-left"></span>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div className="group relative">
-                        <a href="#" className="relative transition-colors py-1">
-                            Produits
-                            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-all duration-300 ease-in-out transform scale-x-0 group-hover:scale-x-100 group-hover:bg-[#FF6347] origin-left"></span>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div className="group relative">
-                        <a href="#" className="relative transition-colors py-1">
-                            Contact
-                            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-all duration-300 ease-in-out transform scale-x-0 group-hover:scale-x-100 group-hover:bg-[#FF6347] origin-left"></span>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-            <div className="flex items-center text-[#F5F5F5] space-x-6">
-                <SearchIcon className="cursor-pointer hover:text-gray-400 " />
-                <ShoppingCartIcon className="cursor-pointer  hover:text-gray-400" />
-                <AccountCircleIcon className="cursor-pointer  hover:text-gray-400" />
-            </div>
-        </nav>
-    );
-};
+export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-export default Navbar;
-3;
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
+  return (
+    <nav className="fixed top-0  left-0 bg-[#F7F7F7] w-full h-[70px] flex items-center justify-between py-4 shadow-md px-4 lg:px-[15vh] bg-[#] z-50">
+      <div className="text-[#1D3557]">
+        <a href="#">Logo</a>
+      </div>
+      
+      <div className="lg:hidden">
+        <button onClick={toggleMenu} className="text-[#1D3557]">
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+      
+      
+      <ul className={`flex-col lg:flex-row lg:flex absolute lg:relative top-[70px] lg:top-0 left-0 w-full lg:w-auto  lg:bg-transparent transition-all duration-300 ease-in-out ${isMenuOpen ? 'flex' : 'hidden'} lg:space-x-8 text-[#1D3557] p-4 lg:p-0`}>
+        {['Home', 'Teams', 'About Us', 'Contact'].map((item) => (
+          <li key={item}>
+            <div className="group relative">
+              
+              <a href="#" className="relative transition-colors py-1 inline-block">
+                {item}
+                
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FF6347] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </a>
+            </div>
+          </li>
+        ))}
+      </ul>
+      
+      <div className="hidden lg:flex items-center text-[#1D3557] space-x-6">
+        <Search className="cursor-pointer hover:text-gray-400" />
+        <ShoppingCart className="cursor-pointer hover:text-gray-400" />
+        <User className="cursor-pointer hover:text-gray-400" />
+      </div>
+    </nav>
+  )
+}
