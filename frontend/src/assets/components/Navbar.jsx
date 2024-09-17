@@ -21,7 +21,7 @@ export default function Navbar() {
       </div>
       
       
-      <ul className={`flex-col lg:flex-row lg:flex absolute lg:relative top-[70px] lg:top-0 left-0 w-full lg:w-auto  lg:bg-transparent transition-all duration-300 ease-in-out ${isMenuOpen ? 'flex' : 'hidden'} lg:space-x-8 text-[#1D3557] p-4 lg:p-0`}>
+      <ul className={`flex-col lg:flex-row lg:flex absolute lg:relative top-[70px] lg:top-0 left-0 w-full lg:w-auto  lg:bg-transparent transition-all duration-300 ease-in-out ${isMenuOpen ? 'flex shadow-md' : 'hidden'} lg:space-x-8 text-lg text-[#1D3557] bg-[#F7F7F7] p-4 lg:p-0`}>
         {['Home', 'Teams', 'About Us', 'Contact'].map((item) => (
           <li key={item}>
             <div className="group relative">
