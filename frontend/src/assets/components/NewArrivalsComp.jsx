@@ -57,7 +57,7 @@ const NewArrivalsComp = () => {
     const displayedData = isSmallScreen ? data.slice(0, 2) : data;
 
     return (
-        <div className="container mx-auto  py-8">
+        <div className="container mx-auto mb-12  py-8">
             <h2 className="text-center text-[#1D3557] text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 md:mb-10">
                 Check Our <span className="text-[#E63946]">New</span> Arrivals<span className="text-[#E63946]">!</span>
             </h2>
