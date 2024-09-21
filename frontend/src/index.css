@@ -7,3 +7,13 @@ body {
     background-color: #F7F7F7 ;
   }
   
+/* Hide default slick arrows */
+.slick-prev, .slick-next {
+  z-index: 1; /* Bring the arrows above other elements */
+}
+
+/* Style the default slick arrows */
+.slick-prev:before, .slick-next:before {
+  color: gray; /* Change the arrow color */
+  font-size: 30px; /* Adjust the size of the arrows */
+}
