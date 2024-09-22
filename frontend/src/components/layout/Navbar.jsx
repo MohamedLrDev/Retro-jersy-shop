@@ -29,7 +29,7 @@ export default function Navbar() {
               <a href="#" className="relative transition-colors py-1 inline-block">
                 {item}
                 
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FF6347] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#E63946] transition-all duration-300 ease-in-out group-hover:w-full"></span>
               </a>
             </div>
           </li>

@@ -1,4 +1,4 @@
-import barca from "../images/barca-jersey.png";
+import barca from "../../assets/images/barca-jersey.png";
 import GppGoodOutlinedIcon from "@mui/icons-material/GppGoodOutlined";
 import BoltOutlinedIcon from "@mui/icons-material/BoltOutlined";
 import ThumbUpOffAltOutlinedIcon from "@mui/icons-material/ThumbUpOffAltOutlined";

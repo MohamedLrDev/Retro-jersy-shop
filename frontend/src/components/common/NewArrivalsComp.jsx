@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Item from "./Item";
-import ac_milan_jersey from "../images/jerseys/ac-milan-jersey.png";
+import ac_milan_jersey from "../../assets/images/jerseys/ac-milan-jersey.png";
 // import bayern_jersey from "../images/jerseys/bayern-jersey.png";
 
 const NewArrivalsComp = () => {

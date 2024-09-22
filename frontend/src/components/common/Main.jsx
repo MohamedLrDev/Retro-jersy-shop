@@ -3,9 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Import your images
-import jersey from "../images/two-barca-jersey-3d.png";
-import jersey2 from "../images/real-madrid-home-jersey.png";
-import jersey3 from "../images/liverpool-2023-home-jersey.png";
+import jersey from "../../assets/images/two-barca-jersey-3d.png";
+import jersey2 from "../../assets/images/real-madrid-home-jersey.png";
+import jersey3 from "../../assets/images/liverpool-2023-home-jersey.png";
 
 export default function Main() {
     const settings = {

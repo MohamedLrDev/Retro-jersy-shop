@@ -1,6 +1,6 @@
 import Slider from 'react-slick';
 import CardComp from './CardComp';
-import { SampleNextArrow, SamplePrevArrow } from './Arrows';
+import { SampleNextArrow, SamplePrevArrow } from '../UI/Arrows';
 
 const Teams = () => {
 

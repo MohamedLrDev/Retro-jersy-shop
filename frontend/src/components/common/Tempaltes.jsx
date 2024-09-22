@@ -20,35 +20,35 @@ const Templates = () => {
             <Slider {...settings}>
                 <div className="w-full h-full">
                     <img
-                        src="https://placehold.co/600x300"
+                        src="https://placehold.co/600x150"
                         className="w-full h-full object-cover"
                         alt="slide-1"
                     />
                 </div>
                 <div className="w-full h-full">
                     <img
-                        src="https://placehold.co/600x300"
+                        src="https://placehold.co/600x150"
                         className="w-full h-full object-cover"
                         alt="slide-2"
                     />
                 </div>
                 <div className="w-full h-full">
                     <img
-                        src="https://placehold.co/600x300"
+                        src="https://placehold.co/600x150"
                         className="w-full h-full object-cover"
                         alt="slide-3"
                     />
                 </div>
                 <div className="w-full h-full">
                     <img
-                        src="https://placehold.co/600x300"
+                        src="https://placehold.co/600x150"
                         className="w-full h-full object-cover"
                         alt="slide-4"
                     />
                 </div>
                 <div className="w-full h-full">
                     <img
-                        src="https://placehold.co/600x300"
+                        src="https://placehold.co/600x150"
                         className="w-full h-full object-cover"
                         alt="slide-5"
                     />
