@@ -3,17 +3,22 @@
 @tailwind utilities;
 /* src/styles/global.css */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #F7F7F7 ;
-  }
-  
+    font-family: "Poppins", sans-serif;
+    background-color: #f7f7f7;
+}
+.dark body {
+    background-color: #1F2937; /* Dark mode background (gray) */
+}
+
 /* Hide default slick arrows */
-.slick-prev, .slick-next {
-  z-index: 1; /* Bring the arrows above other elements */
+.slick-prev,
+.slick-next {
+    z-index: 1; /* Bring the arrows above other elements */
 }
 
 /* Style the default slick arrows */
-.slick-prev:before, .slick-next:before {
-  color: gray; /* Change the arrow color */
-  font-size: 30px; /* Adjust the size of the arrows */
+.slick-prev:before,
+.slick-next:before {
+    color: gray; /* Change the arrow color */
+    font-size: 30px; /* Adjust the size of the arrows */
 }

@@ -6,31 +6,31 @@ import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
 
 const MainLayout = () => {
     return (
-        <div className="flex flex-col items-center text-[#1D3557] my-8 px-8">
+        <div className="flex flex-col items-center lg:px-12 dark:text-[#F7F7F7] text-[#1D3557] my-8 px-8">
             {/* Title Section */}
             <h1 className="text-4xl mb-2 text-center ">
                 Get<span className="font-semibold text-[#E63946]"> YOUR </span>
                 jersey
             </h1>
-            <p className="text-gray-500 mb-8 text-lg text-center">
+            <p className="text-gray-500 dark:text-gray-300 mb-8 text-lg text-center">
                 No complicated user settings. No app. No Bluetooth. Simply press
                 and restore.
             </p>
 
             {/* Content Section */}
-            <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-6xl">
+            <div className="flex flex-col md:flex-row  items-center justify-center w-full max-w-6xl">
                 {/* Left Text Block */}
                 <div className="flex-1 text-center">
                     <div className="flex flex-col items-center mb-8">
                         <GppGoodOutlinedIcon style={{ fontSize: 48 }} />
-                        <p className="text-gray-500 mt-4">
+                        <p className="text-gray-500 dark:text-gray-300 mt-4">
                             Discover our authentic, high-quality jerseys,
                             designed to reflect your favorite teams and eras.
                         </p>
                     </div>
                     <div className="flex flex-col items-center">
                         <ThumbUpOffAltOutlinedIcon style={{ fontSize: 48 }} />
-                        <p className="text-gray-500 mt-4">
+                        <p className="text-gray-500 dark:text-gray-300 mt-4">
                             Our clients provided an excellent and highly valued
                             recommendation.
                         </p>
@@ -53,14 +53,14 @@ const MainLayout = () => {
                 <div className="flex-1 text-center md:pl-8">
                     <div className="flex flex-col items-center mb-8">
                         <BoltOutlinedIcon style={{ fontSize: 48 }} />
-                        <p className="text-gray-500 mt-4">
+                        <p className="text-gray-500 dark:text-gray-300 mt-4">
                             Quick and reliable delivery service available
                             worldwide no matter where you are.
                         </p>
                     </div>
                     <div className="flex flex-col items-center">
                         <HandshakeOutlinedIcon style={{ fontSize: 48 }} />
-                        <p className="text-gray-500 mt-4">
+                        <p className="text-gray-500 dark:text-gray-300 mt-4">
                             Unique pulse trains and emitter sequencing
                             algorithms yield a whole brain stimulation that is
                             rapid and efficient.

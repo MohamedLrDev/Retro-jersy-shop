@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import Item from "./Item";
 import ac_milan_jersey from "../../assets/images/jerseys/ac-milan-jersey.png";
-// import bayern_jersey from "../images/jerseys/bayern-jersey.png";
+
 
 const NewArrivalsComp = () => {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
     useEffect(() => {
         const checkScreenSize = () => {
-            setIsSmallScreen(window.innerWidth < 640); // 640px is the 'sm' breakpoint in Tailwind
+            setIsSmallScreen(window.innerWidth < 769); // 640px is the 'sm' breakpoint in Tailwind
         };
 
         checkScreenSize();
@@ -57,8 +57,8 @@ const NewArrivalsComp = () => {
     const displayedData = isSmallScreen ? data.slice(0, 2) : data;
 
     return (
-        <div className="container mx-auto mb-12  py-8">
-            <h2 className="text-center text-[#1D3557] text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 md:mb-10">
+        <div className="container mx-auto mb-12 py-8">
+            <h2 className="text-center text-[#1D3557] dark:text-[#f7f7f7] text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 md:mb-10">
                 Check Our <span className="text-[#E63946]">New</span> Arrivals<span className="text-[#E63946]">!</span>
             </h2>
             <div className="pt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 sm:gap-8 md:gap-10">

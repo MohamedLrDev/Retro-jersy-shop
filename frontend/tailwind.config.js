@@ -7,6 +7,7 @@ export default {
       files: [/* ... */],
       extract
     }],
+    darkMode: 'class',
     theme: {
         extend: {},
         patterns: {

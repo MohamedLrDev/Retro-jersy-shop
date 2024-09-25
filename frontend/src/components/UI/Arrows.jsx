@@ -10,7 +10,7 @@ function SampleNextArrow(props) {
       />
     );
   }
-  
+   
   function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (

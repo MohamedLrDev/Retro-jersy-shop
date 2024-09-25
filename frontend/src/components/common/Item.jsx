@@ -13,13 +13,13 @@ const Item = ({ imageSrc, productName, price }) => {
       </div>
       
       {/* Product name - top left */}
-      <div className="absolute top-1.5 left-4 text-left max-w-[70%]">
-        <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-[#1D3557] line-clamp-2">{productName}</h3>
+      <div className="absolute top-2 left-0 text-left max-w-[70%]">
+        <h3 className=" text-base sm:text-base md:text-lg lg:text-xl dark:text-white dark:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] font-semibold text-[#1D3557] line-clamp-1">{productName}</h3>
       </div>
       
       {/* Price tag - bottom right */}
-      <div className="absolute bottom-4 right-0 text-right">
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-[#E63946]">{price}</p>
+      <div className="absolute bottom-[-0.5rem] right-2 text-right">
+        <p className="text-xl sm:text-lg md:text-xl lg:text-2xl font-bold dark:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-[#E63946]">{price}</p>
       </div>
     </div>
     );
